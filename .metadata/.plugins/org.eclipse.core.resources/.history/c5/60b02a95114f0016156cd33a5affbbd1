@@ -1,0 +1,9 @@
+package myuse.myenum;
+
+public enum AbstractEnum {
+	A("aaaa");
+	private String string;
+	private AbstractEnum(String string){
+		this.string = string;
+	}
+}

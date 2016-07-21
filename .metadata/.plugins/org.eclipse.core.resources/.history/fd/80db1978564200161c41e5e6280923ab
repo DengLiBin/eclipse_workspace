@@ -1,0 +1,9 @@
+package test;
+/**
+ * 工厂方法模式
+ * @author Administrator
+ *
+ */
+public class FruitFactory {
+	
+}

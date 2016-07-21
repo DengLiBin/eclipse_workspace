@@ -1,0 +1,12 @@
+package myuse.myenum;
+/*
+ * 带抽象方法的枚举
+ */
+public enum AbstractEnum {
+	A("aaaa");
+	private String string;
+	private AbstractEnum(String string){
+		this.string = string;
+	}
+	public abstract String localValue();
+}

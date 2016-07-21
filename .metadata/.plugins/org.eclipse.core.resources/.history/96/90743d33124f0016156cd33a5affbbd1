@@ -1,0 +1,18 @@
+package myuse.test;
+
+import org.junit.Test;
+
+import myuse.myenum.AbstractEnum;
+import myuse.myenum.Direction;
+
+public class TestEnum {
+	@Test
+	public void testEnum(){
+		System.out.println(Direction.E);
+		Direction.E.print();
+	}
+	@Test
+	public void testAbstractEnum(){
+		String string = AbstractEnum.A.localValue();
+	}
+}

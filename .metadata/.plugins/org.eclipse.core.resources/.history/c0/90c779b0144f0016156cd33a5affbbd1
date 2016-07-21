@@ -1,0 +1,32 @@
+package myuse.test;
+
+import org.junit.Test;
+
+import myuse.myenum.AbstractEnum;
+import myuse.myenum.Direction;
+
+public class TestEnum {
+	@Test
+	public void testEnum(){
+		System.out.println(Direction.E.name()+"---"+Direction.E.ordinal());//E---0,位置，从0开始
+		Direction.E.print();
+		/*
+		String str = "K";
+		Direction dir = Direction.E.valueOf(Direction.class, str);//将字符串转换成枚举
+		System.out.println(dir);//测试不通过，没有K这个枚举,该方法可用来判断用户提交的数据是否是指定的数据
+		
+		*/
+		Direction[] dirs = Direction.values();
+		for(Direction d : dirs){
+			System.out.println(d);
+			d.print();
+		}
+		
+	}
+	//测试带抽象方法的枚举
+	@Test
+	public void testAbstractEnum(){
+		String string = AbstractEnum.A.localValue();
+		System.out.println(string);
+	}
+}

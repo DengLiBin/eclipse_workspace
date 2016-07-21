@@ -1,0 +1,17 @@
+package myuse.test;
+
+import org.junit.Test;
+
+import myuse.reflect.MyReflect;
+
+public class TestReflect {
+	@Test
+	public void testReflect(){
+		try {
+			new MyReflect().reForName();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

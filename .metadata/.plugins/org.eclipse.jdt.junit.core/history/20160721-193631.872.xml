@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MyBeanUtil.testMap2Bean" project="JavaImprove" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="testMap2Bean" classname="myuse.beanutils.MyBeanUtil" time="0.083"/>
+</testrun>

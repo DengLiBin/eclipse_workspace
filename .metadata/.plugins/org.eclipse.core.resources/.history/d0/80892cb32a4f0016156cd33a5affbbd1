@@ -1,0 +1,42 @@
+package myuse.introspector;
+
+import java.beans.BeanInfo;
+import java.beans.IntrospectionException;
+import java.beans.Introspector;
+import java.beans.PropertyDescriptor;
+import java.lang.reflect.Method;
+
+import org.junit.Test;
+
+import myuse.bean.Student;
+
+
+/**
+ * 内省Introspector，操作javaBean
+ * @author DengLibin
+ *
+ */
+public class MyIntrospector {
+	//获取bean的所有属性
+	@Test
+	public void testIntrospector() throws Exception{
+		BeanInfo personInfo = Introspector.getBeanInfo(Student.class,Student.class.getSuperclass());//去除父类的class属性
+		PropertyDescriptor[] pros = personInfo.getPropertyDescriptors();//获取bean的属性
+		
+		for(PropertyDescriptor pro : pros){
+			System.out.println(pro.getName());
+		}	
+	}
+	//操作bean的指定的属性
+	@Test
+	public void testBeanProperty() throws Exception{
+		Student stu = new Student();
+		PropertyDescriptor pd = new PropertyDescriptor("age", Student.class);
+		Method method = pd.getWriteMethod();
+		method.invoke(stu, 14);
+		System.out.println(stu.getAge());
+	}
+}
+
+
+

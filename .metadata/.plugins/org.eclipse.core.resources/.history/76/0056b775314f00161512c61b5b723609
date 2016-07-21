@@ -1,0 +1,33 @@
+package myuse.beanutils;
+
+import java.lang.reflect.InvocationTargetException;
+
+import org.apache.commons.beanutils.BeanUtils;
+import org.junit.Test;
+
+import myuse.bean.Student;
+
+/**
+ * 使用BeanUtils(Apache的第三方jar包,需要commons-logging.jar支持)操作bean的属性
+ * @author DengLibin
+ *
+ */
+public class MyBeanUtil {
+	@Test
+	public void testBeanUtils() throws IllegalAccessException, InvocationTargetException{
+		String name = "黎明";
+		int age = 12;
+		int id = 123;
+		String birthday = "1988-09-12";
+		
+		Student stu = new Student();
+		BeanUtils.setProperty(stu, "name", "李明");//设置属性值
+		BeanUtils.setProperty(stu, "age", age);//设置属性值
+		BeanUtils.setProperty(stu, "birthday", birthday);//设置属性值
+		
+		System.out.println(stu.getName());
+		
+	}
+}
+
+

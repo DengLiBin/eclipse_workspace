@@ -1,0 +1,5 @@
+package myuse.myenum;
+
+public enum Direction {
+
+}

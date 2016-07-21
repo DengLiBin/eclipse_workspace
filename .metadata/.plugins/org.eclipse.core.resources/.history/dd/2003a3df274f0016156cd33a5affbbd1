@@ -1,0 +1,9 @@
+package myuse.introspector;
+/**
+ * ÄÚÊ¡£¬²Ù×÷javabean
+ * @author DengLibin
+ *
+ */
+public class MyIntrospector {
+
+}

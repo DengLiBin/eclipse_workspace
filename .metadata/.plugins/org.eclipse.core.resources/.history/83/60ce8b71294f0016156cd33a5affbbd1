@@ -1,0 +1,26 @@
+package myuse.introspector;
+
+import java.beans.BeanInfo;
+import java.beans.IntrospectionException;
+import java.beans.Introspector;
+import java.beans.PropertyDescriptor;
+
+import org.junit.Test;
+
+import myuse.domain.Person;
+
+/**
+ * ÄÚÊ¡Introspector£¬²Ù×÷javaBean
+ * @author DengLibin
+ *
+ */
+public class MyIntrospector {
+	@Test
+	public void testIntrospector() throws Exception{
+		BeanInfo personInfo = Introspector.getBeanInfo(Person.class);
+		PropertyDescriptor[] pros = personInfo.getPropertyDescriptors();
+		for(PropertyDescriptor pro : pros){
+			System.out.println(pro.getName());
+		}
+	}
+}

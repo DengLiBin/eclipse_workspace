@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=M02FactoryMethodModel/src&lt;test{FruitFactory.java[FruitFactory" modifiers="513" timestamp="1467685535214"/>
+<typeInfo handle="=M03AbstractFactoryModel/src&lt;test{Apple.java[Apple" modifiers="1025" timestamp="1467687845937"/>
+<typeInfo handle="=M03AbstractFactoryModel/src&lt;test{Banana.java[Banana" modifiers="1025" timestamp="1467687880862"/>
+<typeInfo handle="=M03AbstractFactoryModel/src&lt;test{FruitFactory.java[FruitFactory" modifiers="513" timestamp="1467688303817"/>
+<typeInfo handle="=M06BuilderModel/src&lt;test{HouseBuilder.java[HouseBuilder" modifiers="513" timestamp="1467702485562"/>
+<typeInfo handle="=M07DecoratorModel/src&lt;test{Car.java[Car" modifiers="513" timestamp="1467766978647"/>
+<typeInfo handle="=M07DecoratorModel/src&lt;test{CarDecorator.java[CarDecorator" modifiers="1025" timestamp="1467768454171"/>
+<typeInfo handle="=M08ProxyModel/src&lt;test{Subject.java[Subject" modifiers="513" timestamp="1467769393535"/>
+<typeInfo handle="=M09BridgeModel/src&lt;test{Engine.java[Engine" modifiers="513" timestamp="1467785400037"/>
+<typeInfo handle="=M09BridgeModel/src&lt;test{Car.java[Car" modifiers="1025" timestamp="1467785733057"/>
+<typeInfo handle="=M13CompositeModel/src&lt;test{IFile.java[IFile" modifiers="513" timestamp="1467861681749"/>
+<typeInfo handle="=M15StrategyModel/src&lt;test{Strategy.java[Strategy" modifiers="513" timestamp="1467954436864"/>
+<typeInfo handle="=M16ObserverModel/E:\/Java\/jre\/lib\/rt.jar&lt;java.util(Observable.class[Observable" modifiers="33" timestamp="1465119023880"/>
+<typeInfo handle="=M16ObserverModel/E:\/Java\/jre\/lib\/rt.jar&lt;java.util(Observer.class[Observer" modifiers="1537" timestamp="1465119023880"/>
+<typeInfo handle="=M17InterpreterModel/E:\/Java\/jre\/lib\/rt.jar&lt;java.beans(Expression.class[Expression" modifiers="33" timestamp="1465119023880"/>
+<typeInfo handle="=M17InterpreterModel/src&lt;test{Expression.java[Expression" modifiers="1025" timestamp="1467957742726"/>
+<typeInfo handle="=M19VisitorModel/src&lt;test{ParkElement.java[ParkElement" modifiers="513" timestamp="1468201502300"/>
+<typeInfo handle="=M19VisitorModel/src&lt;test{Visitor.java[Visitor" modifiers="513" timestamp="1468201188813"/>
+<typeInfo handle="=M21TemplateMethodModel/src&lt;test{MakeCar.java[MakeCar" modifiers="1025" timestamp="1468285006847"/>
+<typeInfo handle="=M23StateModel/src&lt;test{State.java[State" modifiers="1025" timestamp="1468373915349"/>
+<typeInfo handle="=M24CoRModel/src&lt;test{CarHandler.java[CarHandler" modifiers="1025" timestamp="1468377662977"/>
+</typeInfoHistroy>

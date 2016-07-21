@@ -1,0 +1,9 @@
+package myuse.beanutils;
+/**
+ * 使用BeanUtils(第三方jar包)操作bean的属性
+ * @author DengLibin
+ *
+ */
+public class MyBeanUtil {
+	
+}

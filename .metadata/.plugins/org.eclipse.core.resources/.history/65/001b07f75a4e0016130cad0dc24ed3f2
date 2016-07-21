@@ -1,0 +1,13 @@
+package myuse;
+
+public final class MainClass {
+
+	public static void main(String[] args) {
+		Integer i = 1;//×°Ïä£¬Integer i = new  Integer(1);
+		
+		//²ğÏä
+		int j = i;
+		
+	}
+
+}

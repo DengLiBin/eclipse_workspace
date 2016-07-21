@@ -1,0 +1,21 @@
+package myuse.test;
+
+import org.junit.Test;
+
+import myuse.myenum.AbstractEnum;
+import myuse.myenum.Direction;
+
+public class TestEnum {
+	@Test
+	public void testEnum(){
+		System.out.println(Direction.E+"---"+Direction.E.ordinal());
+		Direction.E.print();
+		
+	}
+	//测试带抽象方法的枚举
+	@Test
+	public void testAbstractEnum(){
+		String string = AbstractEnum.A.localValue();
+		System.out.println(string);
+	}
+}

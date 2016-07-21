@@ -1,0 +1,12 @@
+package myuse.demo;
+
+public class Demo {
+	//可变参数，看成数组
+	public void getSum(int ...nums){
+		int sum = 0;
+		for(int i : nums){
+			sum += i;
+		}
+		System.out.println("sum="+sum);
+	}
+}

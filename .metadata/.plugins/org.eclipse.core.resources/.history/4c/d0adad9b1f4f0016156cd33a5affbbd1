@@ -1,0 +1,66 @@
+package myuse.reflect;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+
+import org.junit.Test;
+
+//反射
+import myuse.domain.Person;
+
+public class MyReflect {
+	public void reForName() throws Exception{
+		
+			//三种方式获取对象的类类型对象
+			Class clazz = Class.forName("myuse.domain.Person");
+			Class clazz2 = new Person(12,"sfgs").getClass();
+			Class clazz3 = Person.class;
+						
+	}
+	//解剖类的构造函数
+	public void parseClassConstuctor() throws Exception{
+		Class clazz = Class.forName(Person.class.getName());
+		Constructor<Person> con = clazz.getConstructor(String.class);
+		Person p = (Person) con.newInstance("denglibin");
+		System.out.println(p.getName());
+		
+		Constructor<Person> con2 = clazz.getConstructor(int.class,String.class);
+		Person p2 = con2.newInstance(14,"蒋介石");
+		System.out.println(p2.getName()+"---"+p2.getAge());
+		
+		
+		
+	}
+	//反射类的私有构造方法
+	public void parsePrivateConstructor() throws Exception{
+		//揭剖私有的构造函数
+		Class clazz = Class.forName(Person.class.getName());
+		Constructor<Person> con3 = clazz.getConstructor(int.class);
+		con3.setAccessible(true);//暴力反射,不成功，测试不通过
+		Person p3 = con3.newInstance(16);
+		System.out.println(p3.getAge());
+	}
+	//通过反射创建对象
+	@Test
+	public void createInstance() throws Exception{
+		Person person = Person.class.newInstance();//必须要有无参的构造方法
+		System.out.println(person);
+	}
+	
+	
+	
+	//反射类的方法
+	@Test
+	public void refectMethods() throws Exception{
+		Class clazz = Class.forName("myuse.domain.Person");
+		Person p = (Person) clazz.newInstance();
+		Method method = clazz.getMethod("aa1", null);
+		method.invoke(p, null);
+		
+		Method methodd2 = clazz.getMethod("aa1", String.class, int[].class);
+		
+	}
+}
+
+
+
+

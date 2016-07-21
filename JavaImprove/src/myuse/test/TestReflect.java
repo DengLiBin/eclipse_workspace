@@ -1,0 +1,27 @@
+package myuse.test;
+
+import org.junit.Test;
+
+import myuse.reflect.MyReflect;
+
+public class TestReflect {
+	@Test
+	public void testReflect(){
+		try {
+			new MyReflect().parseClassConstuctor();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	@Test
+	public void testReflectPrivateConstructor(){
+		try {
+			new MyReflect().parsePrivateConstructor();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+}

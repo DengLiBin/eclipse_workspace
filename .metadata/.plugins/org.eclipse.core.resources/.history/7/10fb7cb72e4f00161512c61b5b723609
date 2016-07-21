@@ -1,0 +1,21 @@
+package myuse.beanutils;
+
+import java.lang.reflect.InvocationTargetException;
+
+import org.apache.commons.beanutils.BeanUtils;
+import org.junit.Test;
+
+import myuse.bean.Student;
+
+/**
+ * 使用BeanUtils(Apache的第三方jar包)操作bean的属性
+ * @author DengLibin
+ *
+ */
+public class MyBeanUtil {
+	@Test
+	public void testBeanUtils() throws IllegalAccessException, InvocationTargetException{
+		Student stu = new Student();
+		BeanUtils.setProperty(stu, "teacher", "friend");
+	}
+}

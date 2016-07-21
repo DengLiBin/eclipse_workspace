@@ -1,0 +1,5 @@
+package myuse.bean;
+
+public class Student {
+
+}

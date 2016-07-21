@@ -1,0 +1,27 @@
+package myuse.introspector;
+
+import java.beans.BeanInfo;
+import java.beans.IntrospectionException;
+import java.beans.Introspector;
+import java.beans.PropertyDescriptor;
+
+import org.junit.Test;
+
+import myuse.bean.Student;
+
+
+/**
+ * 内省Introspector，操作javaBean
+ * @author DengLibin
+ *
+ */
+public class MyIntrospector {
+	@Test
+	public void testIntrospector() throws Exception{
+		BeanInfo personInfo = Introspector.getBeanInfo(Student.class,Object.class);//去除父类的class属性
+		PropertyDescriptor[] pros = personInfo.getPropertyDescriptors();//获取bean的属性
+		for(PropertyDescriptor pro : pros){
+			System.out.println(pro.getName());
+		}
+	}
+}

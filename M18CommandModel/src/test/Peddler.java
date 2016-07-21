@@ -1,0 +1,16 @@
+package test;
+/**
+ * Ğ¡ÉÌ··
+ * @author denglibin
+ *
+ */
+public class Peddler {
+	//ÂôÆ»¹û
+	public void sailApple(){
+		System.out.println("ÂôÆ»¹û");
+	}
+	//ÂôÏã½¶
+	public void sailBanana(){
+		System.out.println("ÂôÏã½¶");
+	}
+}

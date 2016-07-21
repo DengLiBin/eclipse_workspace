@@ -1,0 +1,10 @@
+package myuse.test;
+
+import org.junit.Test;
+
+public class TestReflect {
+	@Test
+	public void testReflect(){
+		
+	}
+}

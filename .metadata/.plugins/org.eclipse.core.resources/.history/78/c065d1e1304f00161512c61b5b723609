@@ -1,0 +1,52 @@
+package myuse.bean;
+
+public class Student {
+	private String name;//字段
+	private int age;//字段
+	private int id;//字段
+	//只有字段对外提供了get()或者set()方法时，该字段才成为属性
+	//属性不是由字段决定的而是由get或是set方法决定的
+	
+	
+	
+	//ab也是该bean的属性，尽管没有这个字段，
+	public int getAb(){
+		return 2;
+	}
+
+
+
+	public String getName() {
+		return name;
+	}
+
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+	public int getAge() {
+		return age;
+	}
+
+
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+
+
+	public int getId() {
+		return id;
+	}
+
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+}

@@ -1,0 +1,29 @@
+package myuse;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public final class MainClass {
+
+	public static void main(String[] args) {
+		Integer i = 1;//装箱，Integer i = new  Integer(1);
+		
+		//拆箱
+		int j = i;
+	
+		//典型应用
+		List list = new ArrayList();
+		list.add(1);//装箱，集合存的是对象类型的 1，而不是基本数据类型 int 1
+		list.add(2);
+		list.add(3);
+		Iterator<Integer> it = list.iterator();
+		while(it.hasNext()){
+			System.out.println(it.next().getClass().getName());
+		}
+		for (Object obj : list){
+			int in = (Integer)obj;
+		}
+	}
+
+}
